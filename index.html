@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lua do Sertão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="cabinet">
+        <header class="topbar">
+            <div class="brand">LUA DO SERTÃO <span>•</span> 1984</div>
+            <div class="scoreboard">
+                <span>PONTOS <b id="score">000000</b></span>
+                <span>VIDAS <b id="lives">3</b></span>
+                <span>FASE <b>1</b></span>
+            </div>
+        </header>
+
+        <section class="game-shell" aria-label="Jogo Lua do Sertão">
+            <canvas id="game" width="960" height="640"></canvas>
+            <div class="message" id="message">
+                <p class="eyebrow">A CAATINGA PRECISA DE VOCÊ</p>
+                <h1>LUA DO<br><em>SERTÃO</em></h1>
+                <p>O Coronel Caboré levou Maria<br>para o alto do morro!</p>
+                <button id="startButton">JOGAR</button>
+                <p class="keys">← → mover &nbsp; • &nbsp; ↑ subir &nbsp; • &nbsp; espaço pular</p>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>MISSÃO:</strong> Suba o morro, desvie dos mandacarus e alcance Maria.</p>
+            <div class="controls"><span>←</span><span>→</span> CORRER &nbsp; <span>↑</span> ESCADA &nbsp;
+                <span>ESPAÇO</span> PULAR</div>
+        </footer>
+    </main>
+    <script src="game.js"></script>
+</body>
+
+</html>
